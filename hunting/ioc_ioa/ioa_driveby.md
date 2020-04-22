@@ -2,7 +2,7 @@
 
 In some cases, a SOC approaches monitoring proactively through dedicated threat hunting expertise.
 
-One fantastic resource to understand the increased levels of context for IOCs is the `Pyramid Of Pain` created by
+One fantastic resource to understand the increased levels of context for IOAs is the `Pyramid Of Pain` created by
 security professional `David Bianco`.
 
 Source: [Pyramid Of Pain](http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html)
