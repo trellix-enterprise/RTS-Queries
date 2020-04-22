@@ -82,6 +82,7 @@ ProcessHistory parent_cmdline
 The `CommandLineHistory` collector gives you the ability to access historical data across your enterprise beyond 30 days.
 
 <br />
+
 ```bash
 CommandLineHistory command_line
     WHERE CommandLineHistory command_line contains "-exec bypass -e"
