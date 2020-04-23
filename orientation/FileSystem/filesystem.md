@@ -8,7 +8,7 @@ Files create_process_pid, full_name, status
 ```
 
 
-## **What Files are in Executables UserSpace: C:\Users**
+## **What Files are Executables in UserSpace: C:\Users**
 
 ```
 Files create_process_pid, full_name, status
