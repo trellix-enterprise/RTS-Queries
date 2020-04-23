@@ -94,15 +94,6 @@ Processes parentname, name, id, execution_mode
     WHERE Processes name equals "svchost.exe"
 ```
 
-## **What is the Process ID of The Child**
-
-```
-Processes parentname, name, id, execution_mode
-    WHERE Processes name equals "svchost.exe"
-```
-
-
-
 ## **What is the CommandLine of The Parent**
 
 ```
