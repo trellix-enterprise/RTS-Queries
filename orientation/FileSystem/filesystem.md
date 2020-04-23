@@ -83,7 +83,7 @@ Files create_process_pid, full_name, status
 
 ```
 Files create_process_pid, full_name, status
-    WHERE deleted_at before "2020-01-01"
+    WHERE deleted_at after "2020-01-01"
 ```
 
 ## **Which Files Were Deleted Before a Date**
@@ -104,5 +104,5 @@ Files create_process_pid, full_name, status
 
 ```
 Files create_process_pid, full_name, status
-    WHERE last_write before "2020-01-01"
+    WHERE last_write after "2020-01-01"
 ```
