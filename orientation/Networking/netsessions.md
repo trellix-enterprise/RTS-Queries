@@ -34,5 +34,5 @@ NetworkSessions computer, user, client, file
 
 ```
 NetworkSessions computer, user, client, file
-    WHERE NetworkSessions computer equals
+    WHERE NetworkSessions computer equals "PC1"
 ```
