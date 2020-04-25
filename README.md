@@ -21,12 +21,6 @@ Practitioners can find practical a `how-to` for MVISION Collectors and advance t
 
 <br />
 
-### Repository Contacts
-Repo Owners | Email Contact|
-------------|--------------|
-Carlos Diaz | carlos_diaz@mcafee.com|
-Ismael Valenzuela | ismael_valenzuela@mcafee.com/|
-
 Category|Location|
 --------|--------|
 FileSystem | Queries That Support File Activity (CRUD)|
@@ -68,3 +62,11 @@ HostInfo connection_status, hostname, ip, platform
     WHERE HostInfo connection_status equals "Online"
         AND HostInfo platfom not equals "Windows"
 ```
+<br />
+<br />
+
+### Repository Contacts
+Repo Owners | Email Contact|
+------------|--------------|
+Carlos Diaz | carlos_diaz@mcafee.com|
+Ismael Valenzuela | ismael_valenzuela@mcafee.com/|
