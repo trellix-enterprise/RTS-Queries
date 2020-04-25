@@ -21,6 +21,12 @@ Practitioners can find practical a `how-to` for MVISION Collectors and advance t
 
 <br />
 
+### Repository Contacts
+Repo Owners | Email Contact|
+------------|--------------|
+Carlos Diaz | carlos_diaz@mcafee.com|
+Ismael Valenzuela | ismael_valenzuela@mcafee.com/|
+
 Category|Location|
 --------|--------|
 FileSystem | Queries That Support File Activity (CRUD)|
