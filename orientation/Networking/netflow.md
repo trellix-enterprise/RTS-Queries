@@ -58,5 +58,5 @@ NetworkFlow status, proto, direction, src_ip, src_port, dst_ip, dst_port
     WHERE NetworkFlow dst_port equals "53"
         AND NetworkFlow dst_ip equals "10.0.0.1"
             OR NetworkFlow dst_ip equals "10.0.0.2"
-            OR NetworkFlow dst_ip equals "10.0.0.3
+            OR NetworkFlow dst_ip equals "10.0.0.3"
 ```
