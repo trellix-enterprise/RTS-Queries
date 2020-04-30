@@ -49,7 +49,7 @@ https://support.microsoft.com/en-us/help/4023262/how-to-verify-that-ms17-010-is-
 InstalledUpdates hotfix_id, install_date, installed_by, description     
     WHERE InstalledUpdates install_date after "2018-03-01"
         AND InstalledUpdates hotfix_id ends with "KB4012212"
-            OR InstalledUpdates.hotfix_id ends with "KB4012215"
+            OR InstalledUpdates hotfix_id ends with "KB4012215"
             OR InstalledUpdates hotfix_id ends with "KB4012218"
             OR InstalledUpdates hotfix_id ends with "KB4015549"
 ```
