@@ -11,7 +11,7 @@ it may notbe enabled in the Chrome browser.
 
 ## **Discover if the DLP Extension is installed**
 
-```
+```sql
 Files created_at, last_write, name
      WHERE Files full_name contains "hddjhjcbioambdhjejhdlobijkdnbggp"
 ```
@@ -19,7 +19,7 @@ Files created_at, last_write, name
 
 ## **Discover Which Systems Have Extensions Installed - SINGLE**
 
-```
+```sql
 # We search for a single target extension
 #
 #
@@ -30,7 +30,7 @@ HostInfo hostname
 
 ## **Discover Which Systems Have Extensions Installed - MANY**
 
-```
+```sql
 # We search for a many target extensions
 #
 #
@@ -48,7 +48,7 @@ A chrome manifest.json file is key to the inner-workings of Chrome Extensions.
 
 By finding and reading this file you can glean relevant details about the extensions design and structure.
 
-```
+```sql
 HostInfo hostname
    AND Files created_at, last_write, name
       WHERE Files full_name contains "hddjhjcbioambdhjejhdlobijkdnbggp"
