@@ -2,7 +2,7 @@
 
 ## **Who are the active users in my enterprise**
 
-```
+```sql
 HostInfo hostname
     AND InteractiveSessions userid, name
         WHERE InteractiveSessions userid not equals ""
@@ -11,7 +11,7 @@ HostInfo hostname
 
 ## **Where has user JDOE logged-in**
 
-```
+```sql
 HostInfo hostname
     AND InteractiveSessions userid, name
         WHERE InteractiveSessions userid equals "jdoe"
@@ -19,7 +19,7 @@ HostInfo hostname
 
 ## **Find if a list of users logged-in to ONE Target PC**
 
-```
+```sql
 HostInfo hostname
     AND InteractiveSessions userid, name
         WHERE HostInfo hostname equals "PC1"
@@ -30,7 +30,7 @@ HostInfo hostname
 
 ## **Show me all Logins to ONE Target PC**
 
-```
+```sql
 HostInfo hostname
     AND InteractiveSessions userid, name
         WHERE HostInfo hostname equals "W10-LATEST"
@@ -40,7 +40,7 @@ HostInfo hostname
 
 ## **Show me all Logins to MANY Target PCs**
 
-```
+```sql
 HostInfo hostname
     AND InteractiveSessions userid, name
         WHERE HostInfo hostname equals "PC1"
