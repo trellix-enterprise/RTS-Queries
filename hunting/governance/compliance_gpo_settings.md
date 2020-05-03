@@ -12,7 +12,7 @@ We are using an example here for the validation of Windows Registry Settings to 
 
 Here we want to find machines that have the `unrestricted` execution policy set. This is a weakness the company would like to avoid.
 
-```
+```sql
 WinRegistry 
     WHERE WinRegistry keypath equals "HKLM\SOFTWARE\Wow6432Node\Policies\Microsoft\Windows\PowerShell"
         AND WinRegistry valuedata equals "Unrestricted"
