@@ -8,14 +8,14 @@ Software installdate, publisher, version, displayname, displayname
 
 ## **Which Software Version Am I running - By Program SINGLE**
 
-```
+```sql
 Software installdate, publisher, version, displayname
     WHERE Software displayname contains "zoom"
 ```
 
 ## **Which Software Version Am I running - By Program MANY**
 
-```
+```sql
 Software installdate, publisher, version, displayname
     WHERE Software displayname contains "zoom"
         OR Software displayname contains "google"
@@ -24,7 +24,7 @@ Software installdate, publisher, version, displayname
 
 ## **Which Software Version Am I running - By Version SINGLE**
 
-```
+```sql
 Software installdate, publisher, version, displayname
     WHERE Software displayname contains "zoom"
         AND Software version not equals "4.6"
@@ -32,7 +32,7 @@ Software installdate, publisher, version, displayname
 
 ## **Which Software Version Am I running - By Version MANY**
 
-```
+```sql
 Software installdate, publisher, version, displayname
     WHERE Software displayname contains "zoom"
         AND Software version not equals "4.6"
