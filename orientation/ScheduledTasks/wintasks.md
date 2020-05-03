@@ -2,28 +2,28 @@
 
 ## **Find a ScheduledTask By Name**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status taskname equals "foo_task"
 ```
 
 ## **Which Tasks Are Ready**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
 ```
 
 ## **Which Tasks Are Disabled**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Disabled"
 ```
 
 ## **Which Tasks Have ServiceAccount as LogonType**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type equals "ServiceAccount"
@@ -31,7 +31,7 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Have an IdentityGroup as LogonType**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type equals "Group"
@@ -39,7 +39,7 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Have an assigned Password as LogonType**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type equals "Password"
@@ -47,7 +47,7 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Have an assigned InteractiveToken as LogonType**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type equals "InteractiveToken"
@@ -55,7 +55,7 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Have an assigned InteractiveToken or Password as LogonType**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type equals "InteractiveToken or Password"
@@ -63,7 +63,7 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Have an assigned InteractiveToken or Password as LogonType**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type equals "InteractiveToken or Password"
@@ -71,7 +71,7 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Have an assigned Service For User (S4U) as LogonType**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type equals "S4U"
@@ -80,14 +80,14 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Are Run By User: SINGLE**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks username equals "jdoe"
 ```
 
 ## **Which Tasks Are Run By User: MANY**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks username equals "jdoe"
         OR ScheduledTasks username equals "alice"
@@ -96,21 +96,21 @@ ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, 
 
 ## **Which Tasks Run Powershell**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks taskrun contains "powershell"
 ```
 
 ## **Which Tasks Run Powershell From UserSpace**
 
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks taskrun contains "powershell"
         AND ScheduledTasks taskrun contains "C:\Users"
 ```
 
 ## **Filter and Refine Result by Exluding**
-```
+```sql
 ScheduledTasks status, logon_type, taskname, last_run, next_run_time, username, folder, taskrun
     WHERE ScheduledTasks status equals "Ready"
         AND ScheduledTasks logon_type not equals "Group"
