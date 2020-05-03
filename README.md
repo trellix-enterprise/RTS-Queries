@@ -1,4 +1,4 @@
-# MVISION EDR RTS-Queries
+# MVISION EDR Real Time Search - RTS
 
 Welcome to the public knowledge-ground to bootstrap your expertise for hunting and thriving with MVISION EDR Real Time Search - RTS.
 
