@@ -8,7 +8,7 @@ We are using an example here for the installed versions of the Zoom web conferen
 
 ## **Step 1- Discover Number of Systems & Versions of the Target Software**
 
-```
+```sql
 HostInfo hostname
     AND Software installdate, publisher, version, displayname
         WHERE Software displayname contains "zoom"
@@ -21,7 +21,7 @@ HostInfo hostname
 
 ## **Step 2 - Discover Source Locations Used To Download The Target Software**
 
-```
+```sql
 HostInfo hostname
     AND BrowserDownload referrer, site_url, mime_type, browser, user_profile
         WHERE BrowserDownload file_path contains "zoom"
@@ -34,7 +34,7 @@ HostInfo hostname
 
 ## **Step 3 - Get Some Hashes, Might Be Good for App Control**
 
-```
+```sql
 HostInfo hostname
     AND Files create_process_pid, full_name, status
         WHERE Files dir starts with "C:\Users"
