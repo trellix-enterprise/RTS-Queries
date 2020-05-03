@@ -8,7 +8,7 @@ AutoRun entry, entry_location, image_path, category, enabled
 
 ## **Filter By Exclusion - By Single Field With Many Matches**
 
-```
+```sql
 AutoRun entry, entry_location, image_path, category, enabled
     WHERE AutoRun category not equals "Explorer"
         AND AutoRun category not equals "Codecs"
@@ -22,7 +22,7 @@ AutoRun entry, entry_location, image_path, category, enabled
 
 ## **Filter By Exclusion - By Many Fields**
 
-```
+```sql
 AutoRun entry, entry_location, image_path, category, enabled
     WHERE AutoRun enabled not equals "enabled"
         AND AutoRun image_path contains "C:\Users"
@@ -39,40 +39,40 @@ AutoRun entry, entry_location, image_path, category, enabled
 
 ## **Which Entries Exist for the Explorer AutoRun**
 
-```
+```sql
 AutoRun entry, entry_location, image_path, category
     WHERE AutoRun category equals "Explorer"
 ```
 
 ## **Which Entries Exist for the Logon AutoRun**
 
-```
+```sql
 AutoRun entry, entry_location, image_path, category
     WHERE AutoRun category equals "Logon"
 ```
 
 ## **Which Entries Exist for the Tasks AutoRun**
-```
+```sql
 AutoRun entry, entry_location, image_path, category
     WHERE AutoRun category equals "Tasks"
 ```
 
 ## **Which Entries Exist for the Tasks AutoRun**
-```
+```sql
 AutoRun entry, entry_location, image_path, category
     WHERE AutoRun category equals "Tasks"
 ```
 
 ### **Specify Tasks that launch with EXE Files**
 
-```
+```sql
 AutoRun  category, entry, entry_location, image_path, launch_string, description
     WHERE AutoRun category equals "Tasks"
         AND AutoRun image_path ends with ".exe"
 ```
 
 ### **Specify Tasks that launch with EXE Files - From User Space**
-```
+```sql
 AutoRun  category, entry, entry_location, image_path, launch_string, description
     WHERE AutoRun category equals "Tasks"
         AND AutoRun image_path ends with ".exe"
@@ -80,7 +80,7 @@ AutoRun  category, entry, entry_location, image_path, launch_string, description
 ```
 
 ### **Specify Tasks that launch with EXE Files - By Description**
-```
+```sql
 AutoRun  category, entry, entry_location, image_path, launch_string, description
     WHERE AutoRun category equals "Tasks"
         AND AutoRun image_path ends with ".exe"
