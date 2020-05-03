@@ -14,7 +14,7 @@ In this section we are applying our search (hunt) towards the `spotting of the a
 
 <br />
 
-```bash
+```sql
 # Presence: Pastebin C2 Downloaders: Non-User Initiated
 #
 #   By setting url_length > 255 characters
