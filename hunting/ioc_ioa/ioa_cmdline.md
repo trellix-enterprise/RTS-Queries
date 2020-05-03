@@ -12,7 +12,7 @@ In this section we are applying our search (hunt) towards the `spotting of the a
 * The commands run by an adversary leave trails of the type usage or intent they had 
 * Or some specific software has unique commandline parameters that can be used to identify their presence
 
-```bash
+```sql
 # Presence: Mimikatz Cli - IoA
 #
 #   When `mimikatz` is compiled by someone, they may introduce code changes.
@@ -44,7 +44,7 @@ With the below results, plus running initial hash based hunts, we begin to feel 
 # IoA - Commonly Observed Syntax for Powershell Precursors
 
 
-```bash
+```sql
 # Presence: Powershell ShortHand Syntax
 #
 #   Powershell has short-hand syntax for its language to ease the use.
@@ -83,7 +83,7 @@ The `CommandLineHistory` collector gives you the ability to access historical da
 
 <br />
 
-```bash
+```sql
 CommandLineHistory command_line
     WHERE CommandLineHistory command_line contains "-exec bypass -e"
         OR CommandLineHistory command_line contains "-NoP -NonI -W Hidden -E"
