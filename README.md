@@ -44,20 +44,20 @@ Below you can see the format of this guide.  We will expose the question (need) 
 
 #### What Systems have MVision EDR Installed
 
-```
+```sql
 HostInfo connection_status, hostname, ip_address, platform
 ```
 
 #### What Systems are actively managed and are ONLINE
 
-```
+```sql
 HostInfo connection_status, hostname, ip_address, platform
     WHERE HostInfo connection_status equals "Online"
 ```
 
 #### What Systems are actively managed and are not a Windows PC
 
-```
+```sql
 HostInfo connection_status, hostname, ip_address, platform
     WHERE HostInfo connection_status equals "Online"
         AND HostInfo platfom not equals "Windows"
