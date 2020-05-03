@@ -14,7 +14,7 @@ From the Trenches...|[URL](https://www.mcafee.com/blogs/other-blogs/mcafee-labs/
 #       Provides the current status of file, Current or Deleted
 #       Provides the Id of the system process that created the target hash
 
-Files created_process_id, full_name, status
+Files create_process_id, full_name, status
     WHERE Files sha256 equals "ffbb6c4d8d704a530bdd557890f367ad904c09c03f53fda5615a7208a0ea3e4d"
         OR Files sha256 equals "286bffaa9c81abfb938fe65be198770c38115cdec95865a241f913769e9bfd3f"
         OR Files sha256 equals "76a77def28acf51b2b7cdcbfaa182fe5726dd3f9e891682a4efc3226640b9c78"
