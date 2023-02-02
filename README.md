@@ -62,11 +62,3 @@ HostInfo connection_status, hostname, ip_address, platform
     WHERE HostInfo connection_status equals "Online"
         AND HostInfo platfom not equals "Windows"
 ```
-<br />
-<br />
-
-### Repository Contacts
-Repo Owners | Email Contact|
-------------|--------------|
-Carlos Diaz | carlos_diaz@mcafee.com|
-Ismael Valenzuela | ismael_valenzuela@mcafee.com|
